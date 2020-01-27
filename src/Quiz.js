@@ -20,7 +20,7 @@ class Quiz extends Component {
         return (
             <div>
                 {isQuizEnd
-                    ? <QuizEnd handleResetClickHandler={this.handleResetClick.bind(this)} />
+                    ? <QuizEnd resetClickHandler={this.handleResetClick.bind(this)} />
                     : <QuizQuestion quiz_question={quizData.quiz_questions[this.state.quiz_position - 1]} showNextQuestionHandler={this.showNextQuestion.bind(this)} />}
             </div>
         );
